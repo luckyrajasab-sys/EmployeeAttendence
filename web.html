@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> VAScrop Employee Attendance Dashboard</title>
+
+  <link rel="stylesheet" href="web.css">
+</head>
+<body>
+
+  <div class="container">
+    <header class="header">
+      <h1>VAS.Crop Dashboard</h1>
+      <p>Employee Management System</p>
+    </header>
+    <section class="form-card">
+
+      <h2>VasCrop Form</h2>
+
+      <div class="form-grid">
+
+        <div class="input-group">
+          <label>Employee ID</label>
+          <input type="text" id="empId" placeholder="Enter ID">
+        </div>
+
+        <div class="input-group">
+          <label>Employee Name</label>
+          <input type="text" id="empName" placeholder="Enter Name">
+        </div>
+
+        <div class="input-group">
+          <label>Department</label>
+          <input type="text" id="department" placeholder="Enter Department">
+        </div>
+
+        <div class="input-group">
+          <label>Working Days</label>
+          <input type="number" id="workingDays" placeholder="0">
+        </div>
+
+        <div class="input-group">
+          <label>Present Days</label>
+          <input type="number" id="presentDays" placeholder="0">
+        </div>
+
+        <div class="input-group">
+          <label>Leave Days</label>
+          <input type="number" id="leaveDays" placeholder="0">
+        </div>
+
+      </div>
+
+      <button onclick="addAttendance()" class="submit-btn">
+        Save Record
+      </button>
+
+    </section>
+
+    <!-- Table -->
+    <section class="table-card">
+
+      <h2>Attendance Report</h2>
+
+      <div class="table-wrapper">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Department</th>
+              <th>Working</th>
+              <th>Present</th>
+              <th>Leave</th>
+              <th>Attendance %</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+
+          <tbody id="attendanceTable">
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <script src="web.js"></script>
+
+</body>
+</html>
